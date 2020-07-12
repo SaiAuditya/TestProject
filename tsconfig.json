@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+       //ts "module":"commonjs",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "types":["jasmine"],
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "lib": [ "es2015" ,"DOM"]  
+    },
+
+    "typeRoots": [
+        "node_modules/@types"
+      ],
+
+    "exclude": [
+       "node_modules",
+        "**/*.spec.ts"
+    ]
+
+}
