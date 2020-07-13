@@ -23,8 +23,8 @@ describe('sanity', () => {
                 }).then((allTexts) => {
                     console.log(allTexts);
                 }
-                );
-
+                )
+                
                 //for angular we can use directly browser//
                 //for non angular we need to use browser.driver//
                  browser.driver.findElements(by.tagName('a')).then( (elements)=>
