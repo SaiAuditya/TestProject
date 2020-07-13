@@ -59,6 +59,7 @@ describe('sanity', function () {
 });
 function EnterText() {
     return __awaiter(this, void 0, void 0, function () {
+        var count, count2;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0: return [4, protractor_1.element(protractor_1.by.name('q')).sendKeys('ConsolidatedChaos')];
@@ -67,9 +68,10 @@ function EnterText() {
                     return [4, protractor_1.element(protractor_1.by.name('q')).sendKeys(protractor_1.Key.ENTER)];
                 case 2:
                     _a.sent();
-                    protractor_1.element.all(protractor_1.by.tagName('a')).getAttribute('href').then(function (allText) {
-                        console.log(allText);
-                    });
+                    count = protractor_1.element.all(protractor_1.by.tagName('div')).count();
+                    console.log("div all " + count);
+                    count2 = protractor_1.element.all(protractor_1.by.tagName('div')).filter(function (element) { return element.isDisplayed(); }).count();
+                    console.log("div which is visible " + count2);
                     return [2];
             }
         });

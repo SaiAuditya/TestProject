@@ -23,11 +23,15 @@ async function EnterText()
 {
     await element(by.name('q')).sendKeys('ConsolidatedChaos');
     await element(by.name('q')).sendKeys(Key.ENTER);
+    let count = element.all(by.tagName('div')).count();
+    console.log("div all "+count);
+    let count2 = element.all(by.tagName('div')).filter(element=>element.isDisplayed()).count();
+    console.log("div which is visible "+count2)
 
-    element.all(by.tagName('a')).getAttribute('href').then(allText=>
-    {
-        console.log(allText);
-    }
-    )
+    //element.all(by.tagName('a')).getAttribute('href').then(allText=>
+    //{
+      //  console.log(allText);
+    //}
+   // )
   
 }

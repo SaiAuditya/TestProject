@@ -286,6 +286,68 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "screenShotFile": "0059001f-00f7-0038-0037-000e007b0064.png",
         "timestamp": 1594635945061,
         "duration": 29978
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": false,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "06cda37b87b5164cee17cb78c87eb18d",
+        "instanceId": 17852,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL."
+        ],
+        "trace": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.\n    at Timeout._onTimeout (C:\\Users\\venkata_srinadhuni\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4281:23)\n    at listOnTimeout (internal/timers.js:549:17)\n    at processTimers (internal/timers.js:492:7)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "00f400a5-0064-0070-005c-004f00ae00b4.png",
+        "timestamp": 1594649639812,
+        "duration": 47657
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "77d024f38b620e7a72358f96abc709c5",
+        "instanceId": 6072,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "00a200f7-0092-0059-006b-003b00ed00d2.png",
+        "timestamp": 1594649802636,
+        "duration": 9269
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": false,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "f9a4b40c461b13b41c1f817f963dc4c0",
+        "instanceId": 13764,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.",
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL."
+        ],
+        "trace": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.\n    at Timeout._onTimeout (C:\\Users\\venkata_srinadhuni\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4281:23)\n    at listOnTimeout (internal/timers.js:549:17)\n    at processTimers (internal/timers.js:492:7)",
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.\n    at Timeout._onTimeout (C:\\Users\\venkata_srinadhuni\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4281:23)\n    at listOnTimeout (internal/timers.js:549:17)\n    at processTimers (internal/timers.js:492:7)"
+        ],
+        "browserLogs": [],
+        "timestamp": 1594649965995,
+        "duration": 60028
     }
 ];
 
