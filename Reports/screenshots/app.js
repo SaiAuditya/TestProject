@@ -348,6 +348,162 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "browserLogs": [],
         "timestamp": 1594649965995,
         "duration": 60028
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "8fcc18962603b695b00207343cecbe52",
+        "instanceId": 15876,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "008f00e8-0025-0086-00e0-000b003b00e8.png",
+        "timestamp": 1594650099448,
+        "duration": 22037
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": false,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "a095708c32cbf75813f857c629197a8f",
+        "instanceId": 15544,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL."
+        ],
+        "trace": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.\n    at Timeout._onTimeout (C:\\Users\\venkata_srinadhuni\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4281:23)\n    at listOnTimeout (internal/timers.js:549:17)\n    at processTimers (internal/timers.js:492:7)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "00d70099-00a6-0001-007f-00c100390099.png",
+        "timestamp": 1594650185512,
+        "duration": 42997
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": false,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "36ed05686e5b226d208435a052ca35c9",
+        "instanceId": 7304,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.",
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL."
+        ],
+        "trace": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.\n    at Timeout._onTimeout (C:\\Users\\venkata_srinadhuni\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4281:23)\n    at listOnTimeout (internal/timers.js:549:17)\n    at processTimers (internal/timers.js:492:7)",
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.\n    at Timeout._onTimeout (C:\\Users\\venkata_srinadhuni\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4281:23)\n    at listOnTimeout (internal/timers.js:549:17)\n    at processTimers (internal/timers.js:492:7)"
+        ],
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "https://www.google.com/xjs/_/js/k=xjs.s.en_GB.PPa5XJnXUPw.O/ck=xjs.s.vfaZJkMAkzc.L.W.O/am=AAAAgAAAAIAlYO8OIOe_CQBwgYkDAAAAEMAlwcYCKQQJBQEIAAAwqxMAAQI/d=1/exm=IvlUe,MC8mtf,MkHyGd,NBZ7u,OG6ZHd,RMhBfe,RqxLvf,T7XTS,TJw5qb,TxZWcc,URQPYc,Y33vzc,ZyRBae,aCZVp,aa,aam1T,abd,async,bgd,cdos,csi,d,dvl,eN4qad,fEVMic,foot,hsm,iD8Yk,iDPoPb,jsa,kyn,lu,m,mUpTid,mpck,mu,mvYTse,o02Jie,pB6Zqd,qik19b,rHjpXd,sb_wiz,sf,sonic,spch,tg8oTe,tl,uiNkee,vs,xiqEse,xz7cCd,zbML3c/ed=1/dg=2/br=1/ct=zgms/rs=ACT90oGiapNUeCE2dybxpcTyA3huKtUmCw/m=Uuupec,r36a9c?xjs=s2 - Failed to load resource: net::ERR_HTTP2_PING_FAILED",
+                "timestamp": 1594651007418,
+                "type": ""
+            }
+        ],
+        "screenShotFile": "00a6003d-009d-0064-005b-003d005800f7.png",
+        "timestamp": 1594650942238,
+        "duration": 60017
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": false,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "85e4ce7231f583a1f9126e4ab1e3de60",
+        "instanceId": 17208,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL."
+        ],
+        "trace": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.\n    at Timeout._onTimeout (C:\\Users\\venkata_srinadhuni\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4281:23)\n    at listOnTimeout (internal/timers.js:549:17)\n    at processTimers (internal/timers.js:492:7)"
+        ],
+        "browserLogs": [
+            {
+                "level": "WARNING",
+                "message": "https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.yyhByYeMTAc.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/am=AAY/rs=AHpOoo-O470EQdZ-4tpWpppyTQmeOEUv-g/cb=gapi.loaded_0 469 chrome.loadTimes() is deprecated, instead use standardized API: nextHopProtocol in Navigation Timing 2. https://www.chromestatus.com/features/5637885046816768.",
+                "timestamp": 1594652256389,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.yyhByYeMTAc.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/am=AAY/rs=AHpOoo-O470EQdZ-4tpWpppyTQmeOEUv-g/cb=gapi.loaded_0 469 chrome.loadTimes() is deprecated, instead use standardized API: nextHopProtocol in Navigation Timing 2. https://www.chromestatus.com/features/5637885046816768.",
+                "timestamp": 1594652256392,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.yyhByYeMTAc.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/am=AAY/rs=AHpOoo-O470EQdZ-4tpWpppyTQmeOEUv-g/cb=gapi.loaded_0 469 chrome.loadTimes() is deprecated, instead use standardized API: nextHopProtocol in Navigation Timing 2. https://www.chromestatus.com/features/5637885046816768.",
+                "timestamp": 1594652256503,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.yyhByYeMTAc.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/am=AAY/rs=AHpOoo-O470EQdZ-4tpWpppyTQmeOEUv-g/cb=gapi.loaded_0 469 chrome.loadTimes() is deprecated, instead use standardized API: nextHopProtocol in Navigation Timing 2. https://www.chromestatus.com/features/5637885046816768.",
+                "timestamp": 1594652256504,
+                "type": ""
+            }
+        ],
+        "screenShotFile": "008500ee-00d3-00bf-0025-00bb00c400cd.png",
+        "timestamp": 1594652248568,
+        "duration": 35317
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": false,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "bd8221e09a1789f39145805e5a10f106",
+        "instanceId": 20180,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL."
+        ],
+        "trace": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.\n    at Timeout._onTimeout (C:\\Users\\venkata_srinadhuni\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4281:23)\n    at listOnTimeout (internal/timers.js:549:17)\n    at processTimers (internal/timers.js:492:7)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "00390005-005e-0020-004b-0047000f00a8.png",
+        "timestamp": 1594656630359,
+        "duration": 43853
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "147d20fef6193b938f99ed400aa07803",
+        "instanceId": 10424,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "00640079-00f0-0045-00ff-00c10065002d.png",
+        "timestamp": 1594656876533,
+        "duration": 27942
     }
 ];
 

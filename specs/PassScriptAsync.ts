@@ -23,15 +23,21 @@ async function EnterText()
 {
     await element(by.name('q')).sendKeys('ConsolidatedChaos');
     await element(by.name('q')).sendKeys(Key.ENTER);
-    let count = element.all(by.tagName('div')).count();
-    console.log("div all "+count);
-    let count2 = element.all(by.tagName('div')).filter(element=>element.isDisplayed()).count();
-    console.log("div which is visible "+count2)
+    element.all(by.tagName('div')).then(function (arr){console.log(arr.length)});
 
-    //element.all(by.tagName('a')).getAttribute('href').then(allText=>
-    //{
-      //  console.log(allText);
-    //}
-   // )
+    //let count = element.all(by.tagName('div')).then(function (arr){return (arr.length)});
+    //console.log("div count is "+count);
+
+   let loc = element.all(by.tagName('div')).filter(function(elem, index) {
+        return elem.isDisplayed().then(function(text) {
+          return text == true;
+        });
+      }).first().getLocation;
+
+//      browser.driver.actions().mouseMove(loc.).perform();
+
+
+      //console.log("div all visible"+count);
+   
   
 }
