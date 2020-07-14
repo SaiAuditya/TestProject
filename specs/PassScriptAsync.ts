@@ -3,6 +3,8 @@ import * as environment from '../data/environment.json'
 import { } from 'jasmine'
 import { protractor } from 'protractor/built/ptor';
 
+//To format the code it is Shift + Alt + F
+
 describe('sanity', () => {
     it('expected to open google and pass', () => {
         browser.ignoreSynchronization = true;
@@ -37,6 +39,5 @@ async function EnterText() {
         });
     }).first()).click(protractor.Button.RIGHT).perform();
 
-    console.log('waits for above all to complete');
-    
+    console.log('waits for above all to complete'); 
 }
