@@ -69,16 +69,17 @@ function EnterText() {
                 case 2:
                     _a.sent();
                     protractor_1.element.all(protractor_1.by.tagName('div')).then(function (arr) { console.log(arr.length); });
-                    protractor_1.browser.driver.actions().mouseMove(protractor_1.element.all(protractor_1.by.tagName('div')).filter(function (elem, index) {
+                    protractor_1.browser.driver.actions().mouseMove(protractor_1.element.all(protractor_1.by.tagName('span')).filter(function (elem, index) {
                         return elem.isDisplayed().then(function (text) {
                             return text == true;
                         });
                     }).first()).perform();
-                    protractor_1.browser.driver.actions().mouseMove(protractor_1.element.all(protractor_1.by.tagName('div')).filter(function (elem, index) {
+                    protractor_1.browser.driver.actions().mouseMove(protractor_1.element.all(protractor_1.by.tagName('span')).filter(function (elem, index) {
                         return elem.isDisplayed().then(function (text) {
                             return text == true;
                         });
-                    }).first()).click(ptor_1.protractor.Button.RIGHT);
+                    }).first()).click(ptor_1.protractor.Button.RIGHT).perform();
+                    console.log('done');
                     return [2];
             }
         });

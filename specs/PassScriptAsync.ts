@@ -36,17 +36,21 @@ async function EnterText()
         });
       }).first().getLocation();*/
 
-   browser.driver.actions().mouseMove(element.all(by.tagName('div')).filter(function(elem, index) {
+   browser.driver.actions().mouseMove(element.all(by.tagName('span')).filter(function(elem, index) {
     return elem.isDisplayed().then(function(text) {
       return text == true;
     });
   }).first()).perform();
 
-  browser.driver.actions().mouseMove(element.all(by.tagName('div')).filter(function(elem, index) {
+  //browser.driver.actions().click(protractor.Button.RIGHT).perform();
+
+  browser.driver.actions().mouseMove(element.all(by.tagName('span')).filter(function(elem, index) {
     return elem.isDisplayed().then(function(text) {
       return text == true;
     });
-  }).first()).click(protractor.Button.RIGHT);
+  }).first()).click(protractor.Button.RIGHT).perform();
+
+  console.log('done');
 
 
 

@@ -548,6 +548,62 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "screenShotFile": "00ce0045-00f5-0071-002d-00f200f600c2.png",
         "timestamp": 1594696601179,
         "duration": 37686
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "c44ae54a53f778ef67c99701a6eb77d2",
+        "instanceId": 7368,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "009500b1-0024-00dc-00f4-008700a600a5.png",
+        "timestamp": 1594696709091,
+        "duration": 18650
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": false,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "7fc2aaecdc633400af5210be05e72119",
+        "instanceId": 13988,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL."
+        ],
+        "trace": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.\n    at Timeout._onTimeout (C:\\Users\\venkata_srinadhuni\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4281:23)\n    at listOnTimeout (internal/timers.js:549:17)\n    at processTimers (internal/timers.js:492:7)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "006800b6-00d4-0097-0081-002f008b0049.png",
+        "timestamp": 1594697150600,
+        "duration": 31376
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "3254f01a3852146b367f4872626e4e4b",
+        "instanceId": 18356,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "002300e0-0070-00db-000d-00b200b70010.png",
+        "timestamp": 1594697264627,
+        "duration": 18266
     }
 ];
 
