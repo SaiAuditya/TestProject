@@ -45,6 +45,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 exports.__esModule = true;
 var protractor_1 = require("protractor");
 var environment = __importStar(require("../data/environment.json"));
+var ptor_1 = require("protractor/built/ptor");
 describe('sanity', function () {
     it('expected to open google and pass', function () {
         protractor_1.browser.ignoreSynchronization = true;
@@ -68,11 +69,16 @@ function EnterText() {
                 case 2:
                     _a.sent();
                     protractor_1.element.all(protractor_1.by.tagName('div')).then(function (arr) { console.log(arr.length); });
-                    protractor_1.element.all(protractor_1.by.tagName('div')).filter(function (elem, index) {
+                    protractor_1.browser.driver.actions().mouseMove(protractor_1.element.all(protractor_1.by.tagName('div')).filter(function (elem, index) {
                         return elem.isDisplayed().then(function (text) {
                             return text == true;
                         });
-                    }).then(function (arr) { console.log(arr.length); });
+                    }).first()).perform();
+                    protractor_1.browser.driver.actions().mouseMove(protractor_1.element.all(protractor_1.by.tagName('div')).filter(function (elem, index) {
+                        return elem.isDisplayed().then(function (text) {
+                            return text == true;
+                        });
+                    }).first()).click(ptor_1.protractor.Button.RIGHT);
                     return [2];
             }
         });

@@ -504,6 +504,50 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "screenShotFile": "00640079-00f0-0045-00ff-00c10065002d.png",
         "timestamp": 1594656876533,
         "duration": 27942
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": false,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "8a3d60fa655085873e16827240102463",
+        "instanceId": 20496,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL."
+        ],
+        "trace": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.\n    at Timeout._onTimeout (C:\\Users\\venkata_srinadhuni\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4281:23)\n    at listOnTimeout (internal/timers.js:549:17)\n    at processTimers (internal/timers.js:492:7)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "00e8001a-002c-00ab-0001-0020009d00a4.png",
+        "timestamp": 1594696417145,
+        "duration": 59709
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": false,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "6775b09ad5620bbd150a12735f70c7d9",
+        "instanceId": 1128,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL."
+        ],
+        "trace": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.\n    at Timeout._onTimeout (C:\\Users\\venkata_srinadhuni\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4281:23)\n    at listOnTimeout (internal/timers.js:549:17)\n    at processTimers (internal/timers.js:492:7)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "00ce0045-00f5-0071-002d-00f200f600c2.png",
+        "timestamp": 1594696601179,
+        "duration": 37686
     }
 ];
 

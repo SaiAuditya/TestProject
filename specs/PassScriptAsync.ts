@@ -1,6 +1,7 @@
 import { browser, element, by, Key, WebDriver, ElementFinder, WebElement } from 'protractor'
 import * as environment from '../data/environment.json'
 import { } from 'jasmine'
+import { protractor } from 'protractor/built/ptor';
 
 describe('sanity', () => {
     it('expected to open google and pass', () => {
@@ -28,13 +29,25 @@ async function EnterText()
     //let count = element.all(by.tagName('div')).then(function (arr){return (arr.length)});
     //console.log("div count is "+count);
 
-   let loc = element.all(by.tagName('div')).filter(function(elem, index) {
+   /*
+    element.all(by.tagName('div')).filter(function(elem, index) {
         return elem.isDisplayed().then(function(text) {
           return text == true;
         });
-      }).first().getLocation;
+      }).first().getLocation();*/
 
-//      browser.driver.actions().mouseMove(loc.).perform();
+   browser.driver.actions().mouseMove(element.all(by.tagName('div')).filter(function(elem, index) {
+    return elem.isDisplayed().then(function(text) {
+      return text == true;
+    });
+  }).first()).perform();
+
+  browser.driver.actions().mouseMove(element.all(by.tagName('div')).filter(function(elem, index) {
+    return elem.isDisplayed().then(function(text) {
+      return text == true;
+    });
+  }).first()).click(protractor.Button.RIGHT);
+
 
 
       //console.log("div all visible"+count);
