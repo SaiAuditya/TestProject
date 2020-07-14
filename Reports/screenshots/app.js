@@ -604,6 +604,57 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "screenShotFile": "002300e0-0070-00db-000d-00b200b70010.png",
         "timestamp": 1594697264627,
         "duration": 18266
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "c670761803acfcbf21a2d05d281e634c",
+        "instanceId": 22156,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "00fa00b7-0018-001e-00ab-0021004d0059.png",
+        "timestamp": 1594699801299,
+        "duration": 19791
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "a4de91d2ff00a17b8b4a6abf7736401a",
+        "instanceId": 21736,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "00310031-00d0-00de-00ba-00e700180007.png",
+        "timestamp": 1594700079356,
+        "duration": 19737
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "d7746579ba800a6ef48542a3a352c50e",
+        "instanceId": 23088,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "004c0044-0085-00bd-0047-008000210057.png",
+        "timestamp": 1594700128626,
+        "duration": 18673
     }
 ];
 

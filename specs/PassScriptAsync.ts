@@ -17,44 +17,26 @@ describe('sanity', () => {
             }
         );
         EnterText();
-});
+    });
 });
 
-async function EnterText()
-{
+async function EnterText() {
     await element(by.name('q')).sendKeys('ConsolidatedChaos');
     await element(by.name('q')).sendKeys(Key.ENTER);
-    element.all(by.tagName('div')).then(function (arr){console.log(arr.length)});
+    await element.all(by.tagName('div')).then(function (arr) { console.log(arr.length) });
 
-    //let count = element.all(by.tagName('div')).then(function (arr){return (arr.length)});
-    //console.log("div count is "+count);
-
-   /*
-    element.all(by.tagName('div')).filter(function(elem, index) {
-        return elem.isDisplayed().then(function(text) {
-          return text == true;
+    await browser.driver.actions().mouseMove(element.all(by.tagName('span')).filter(function (elem, index) {
+        return elem.isDisplayed().then(function (text) {
+            return text == true;
         });
-      }).first().getLocation();*/
+    }).first()).perform();
 
-   browser.driver.actions().mouseMove(element.all(by.tagName('span')).filter(function(elem, index) {
-    return elem.isDisplayed().then(function(text) {
-      return text == true;
-    });
-  }).first()).perform();
+    await browser.driver.actions().mouseMove(element.all(by.tagName('span')).filter(function (elem, index) {
+        return elem.isDisplayed().then(function (text) {
+            return text == true;
+        });
+    }).first()).click(protractor.Button.RIGHT).perform();
 
-  //browser.driver.actions().click(protractor.Button.RIGHT).perform();
-
-  browser.driver.actions().mouseMove(element.all(by.tagName('span')).filter(function(elem, index) {
-    return elem.isDisplayed().then(function(text) {
-      return text == true;
-    });
-  }).first()).click(protractor.Button.RIGHT).perform();
-
-  console.log('done');
-
-
-
-      //console.log("div all visible"+count);
-   
-  
+    console.log('waits for above all to complete');
+    
 }

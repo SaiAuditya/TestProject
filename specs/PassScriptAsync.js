@@ -68,18 +68,24 @@ function EnterText() {
                     return [4, protractor_1.element(protractor_1.by.name('q')).sendKeys(protractor_1.Key.ENTER)];
                 case 2:
                     _a.sent();
-                    protractor_1.element.all(protractor_1.by.tagName('div')).then(function (arr) { console.log(arr.length); });
-                    protractor_1.browser.driver.actions().mouseMove(protractor_1.element.all(protractor_1.by.tagName('span')).filter(function (elem, index) {
-                        return elem.isDisplayed().then(function (text) {
-                            return text == true;
-                        });
-                    }).first()).perform();
-                    protractor_1.browser.driver.actions().mouseMove(protractor_1.element.all(protractor_1.by.tagName('span')).filter(function (elem, index) {
-                        return elem.isDisplayed().then(function (text) {
-                            return text == true;
-                        });
-                    }).first()).click(ptor_1.protractor.Button.RIGHT).perform();
-                    console.log('done');
+                    return [4, protractor_1.element.all(protractor_1.by.tagName('div')).then(function (arr) { console.log(arr.length); })];
+                case 3:
+                    _a.sent();
+                    return [4, protractor_1.browser.driver.actions().mouseMove(protractor_1.element.all(protractor_1.by.tagName('span')).filter(function (elem, index) {
+                            return elem.isDisplayed().then(function (text) {
+                                return text == true;
+                            });
+                        }).first()).perform()];
+                case 4:
+                    _a.sent();
+                    return [4, protractor_1.browser.driver.actions().mouseMove(protractor_1.element.all(protractor_1.by.tagName('span')).filter(function (elem, index) {
+                            return elem.isDisplayed().then(function (text) {
+                                return text == true;
+                            });
+                        }).first()).click(ptor_1.protractor.Button.RIGHT).perform()];
+                case 5:
+                    _a.sent();
+                    console.log('waits for above all to complete');
                     return [2];
             }
         });
