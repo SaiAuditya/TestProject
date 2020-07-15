@@ -893,6 +893,23 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "screenShotFile": "007e0058-00aa-00d8-0009-006e00640014.png",
         "timestamp": 1594823443805,
         "duration": 19496
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "ae8b26570abf04b3d40a9cc52cecafe8",
+        "instanceId": 6376,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "00eb00d9-0026-009a-003b-00ed0035001e.png",
+        "timestamp": 1594829444838,
+        "duration": 22497
     }
 ];
 

@@ -46,10 +46,12 @@ async function EnterText() :Promise<string> {
 
     console.log('waits for above all to complete'); 
     await sleep(2000);
-    return ('Function is completed');
+    
 }catch(ex)
 {
     return ('Failed' +ex);
+}finally{
+    return ('Function is completed');
 }
 }
 

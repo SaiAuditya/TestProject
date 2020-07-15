@@ -64,7 +64,7 @@ function EnterText() {
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    _a.trys.push([0, 7, , 8]);
+                    _a.trys.push([0, 7, 8, 9]);
                     return [4, protractor_1.element(protractor_1.by.name('q')).sendKeys('ConsolidatedChaos')];
                 case 1:
                     _a.sent();
@@ -92,11 +92,12 @@ function EnterText() {
                     return [4, sleep(2000)];
                 case 6:
                     _a.sent();
-                    return [2, ('Function is completed')];
+                    return [3, 9];
                 case 7:
                     ex_1 = _a.sent();
                     return [2, ('Failed' + ex_1)];
-                case 8: return [2];
+                case 8: return [2, ('Function is completed')];
+                case 9: return [2];
             }
         });
     });
