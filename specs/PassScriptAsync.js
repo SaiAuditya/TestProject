@@ -55,14 +55,17 @@ describe('sanity', function () {
         protractor_1.browser.get(url, 100000).then(function () { return console.log('browserOPened'); }).then(function () {
             protractor_1.browser.getTitle().then(function (title) { return console.log(title); });
         });
-        EnterText();
+        catpureResult();
     });
 });
 function EnterText() {
     return __awaiter(this, void 0, void 0, function () {
+        var ex_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4, protractor_1.element(protractor_1.by.name('q')).sendKeys('ConsolidatedChaos')];
+                case 0:
+                    _a.trys.push([0, 7, , 8]);
+                    return [4, protractor_1.element(protractor_1.by.name('q')).sendKeys('ConsolidatedChaos')];
                 case 1:
                     _a.sent();
                     return [4, protractor_1.element(protractor_1.by.name('q')).sendKeys(protractor_1.Key.ENTER)];
@@ -86,6 +89,35 @@ function EnterText() {
                 case 5:
                     _a.sent();
                     console.log('waits for above all to complete');
+                    return [4, sleep(2000)];
+                case 6:
+                    _a.sent();
+                    return [2, ('Function is completed')];
+                case 7:
+                    ex_1 = _a.sent();
+                    return [2, ('Failed' + ex_1)];
+                case 8: return [2];
+            }
+        });
+    });
+}
+function sleep(ms) {
+    return __awaiter(this, void 0, void 0, function () {
+        return __generator(this, function (_a) {
+            return [2, new Promise(function (resolve) { return setTimeout(resolve, ms); })];
+        });
+    });
+}
+function catpureResult() {
+    return __awaiter(this, void 0, void 0, function () {
+        var _a, _b;
+        return __generator(this, function (_c) {
+            switch (_c.label) {
+                case 0:
+                    _b = (_a = console).log;
+                    return [4, EnterText()];
+                case 1:
+                    _b.apply(_a, [_c.sent()]);
                     return [2];
             }
         });

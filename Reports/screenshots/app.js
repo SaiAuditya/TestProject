@@ -655,6 +655,244 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "screenShotFile": "004c0044-0085-00bd-0047-008000210057.png",
         "timestamp": 1594700128626,
         "duration": 18673
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "891ae518f0da056c709e7cc2389ce66f",
+        "instanceId": 20148,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "005b0008-0012-009f-0050-00fd00060040.png",
+        "timestamp": 1594743060625,
+        "duration": 23671
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "fb3baac3d266ffac4dcb14548761a998",
+        "instanceId": 9864,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "004e00b2-00d2-00cc-0034-004500de009d.png",
+        "timestamp": 1594743222612,
+        "duration": 24155
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "d57ae7fb1d955c00f90b516a2a05b573",
+        "instanceId": 12936,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "00cc0024-0018-00e9-003a-0031009d00a0.png",
+        "timestamp": 1594743591848,
+        "duration": 21899
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "c54b75aabc6c4993ff503180ccdb9edd",
+        "instanceId": 16984,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "007400ee-0039-00b2-0052-000700b90075.png",
+        "timestamp": 1594743902306,
+        "duration": 21803
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "3067f940ba1ab2de46c1bea935e8b44e",
+        "instanceId": 17076,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "005700c1-00e3-00e8-00f7-007400560071.png",
+        "timestamp": 1594744084058,
+        "duration": 23371
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "63c23d0a466c7003aff632274314cf0b",
+        "instanceId": 17176,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "00b600ee-0073-0097-00d0-005c004a00e3.png",
+        "timestamp": 1594744190947,
+        "duration": 26500
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "d6b5203a620fcd342d4a9c35ea9cd7ad",
+        "instanceId": 20936,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "00890098-0012-0047-00fd-0085005b0058.png",
+        "timestamp": 1594744597065,
+        "duration": 27012
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "c71ae6c40b9399777f983062fbb37053",
+        "instanceId": 14884,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "00cf0038-00c7-00b4-00b9-001000780011.png",
+        "timestamp": 1594744687533,
+        "duration": 17257
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "c56214938113fd5b874879a2c6b7e5d8",
+        "instanceId": 16528,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "008300a5-00ca-00d1-0022-00780033001e.png",
+        "timestamp": 1594745046648,
+        "duration": 25705
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "e557e665e28c6cab17acd58dfb499cbc",
+        "instanceId": 21208,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "00e30040-0073-0099-00ba-00df00d80095.png",
+        "timestamp": 1594745316661,
+        "duration": 19133
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "9a3da7bd22f6005ac40e282f836c4c84",
+        "instanceId": 17932,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "007000eb-003e-006d-00ba-00ad001800ff.png",
+        "timestamp": 1594793014387,
+        "duration": 18720
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "af2ec4703fc0fc4221b1f98341628e5e",
+        "instanceId": 13744,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "00880075-00d4-0089-00f7-00d8006800d3.png",
+        "timestamp": 1594818886089,
+        "duration": 14813
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "a5865e3d2299ab3526e9da6eaf6ead63",
+        "instanceId": 12436,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "00cf006d-0031-00f6-0074-007c00080066.png",
+        "timestamp": 1594823379495,
+        "duration": 13915
+    },
+    {
+        "description": "expected to open google and pass|sanity",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "e8f67be7bda03bc2655fd1053fd83b05",
+        "instanceId": 7948,
+        "browser": {
+            "name": "chrome",
+            "version": "83.0.4103.116"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "007e0058-00aa-00d8-0009-006e00640014.png",
+        "timestamp": 1594823443805,
+        "duration": 19496
     }
 ];
 

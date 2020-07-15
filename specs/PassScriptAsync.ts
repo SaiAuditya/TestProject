@@ -1,4 +1,4 @@
-import { browser, element, by, Key, WebDriver, ElementFinder, WebElement } from 'protractor'
+import { browser, element, by, Key, WebDriver, ElementFinder, WebElement, until } from 'protractor'
 import * as environment from '../data/environment.json'
 import { } from 'jasmine'
 import { protractor } from 'protractor/built/ptor';
@@ -18,11 +18,14 @@ describe('sanity', () => {
                 browser.getTitle().then((title: string) => console.log(title));
             }
         );
-        EnterText();
+       catpureResult();
+        
     });
 });
 
-async function EnterText() {
+async function EnterText() :Promise<string> {
+
+    try{
     await element(by.name('q')).sendKeys('ConsolidatedChaos');
     await element(by.name('q')).sendKeys(Key.ENTER);
     await element.all(by.tagName('div')).then(function (arr) { console.log(arr.length) });
@@ -33,6 +36,8 @@ async function EnterText() {
         });
     }).first()).perform();
 
+    //await browser.driver.wait(until.elementLocated(element(by.tagName('span'))));
+
     await browser.driver.actions().mouseMove(element.all(by.tagName('span')).filter(function (elem, index) {
         return elem.isDisplayed().then(function (text) {
             return text == true;
@@ -40,4 +45,20 @@ async function EnterText() {
     }).first()).click(protractor.Button.RIGHT).perform();
 
     console.log('waits for above all to complete'); 
+    await sleep(2000);
+    return ('Function is completed');
+}catch(ex)
+{
+    return ('Failed' +ex);
+}
+}
+
+async function sleep(ms:number) {
+ // return new Promise(resolve => setTimeout(resolve, ms));
+ return new Promise(resolve=> setTimeout(resolve,ms));
+}
+
+async function catpureResult()
+{
+    console.log(await EnterText());
 }
