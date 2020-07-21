@@ -18,9 +18,16 @@ describe('sanity', () => {
                 browser.getTitle().then((title: string) => console.log(title));
             }
         );
-       catpureResult();
-        
-    });
+       catpureResult();    
+
+});
+
+it('does the first step', () =>
+{
+    console.log('second test');
+}
+)
+
 });
 
 async function EnterText() :Promise<string> {
@@ -29,6 +36,8 @@ async function EnterText() :Promise<string> {
     await element(by.name('q')).sendKeys('ConsolidatedChaos');
     await element(by.name('q')).sendKeys(Key.ENTER);
     await element.all(by.tagName('div')).then(function (arr) { console.log(arr.length) });
+    var length = (await element.all(by.tagName('div'))).length
+    console.log('lenght is '+length);
 
     await browser.driver.actions().mouseMove(element.all(by.tagName('span')).filter(function (elem, index) {
         return elem.isDisplayed().then(function (text) {
@@ -52,7 +61,7 @@ async function EnterText() :Promise<string> {
     return ('Failed' +ex);
 }finally{
     return ('Function is completed');
-}
+}   
 }
 
 async function sleep(ms:number) {
