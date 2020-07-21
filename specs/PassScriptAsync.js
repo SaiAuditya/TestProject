@@ -46,8 +46,8 @@ exports.__esModule = true;
 var protractor_1 = require("protractor");
 var environment = __importStar(require("../data/environment.json"));
 var ptor_1 = require("protractor/built/ptor");
-describe('sanity', function () {
-    it('expected to open google and pass', function () {
+describe('End to end testing', function () {
+    it('Test case 1 : to start a browser', function () {
         protractor_1.browser.ignoreSynchronization = true;
         var url = environment[0].url;
         var title = environment[0].title;
@@ -57,14 +57,17 @@ describe('sanity', function () {
         });
         catpureResult();
     });
+    it('Test case 2 : does the second step', function () {
+        console.log('second test');
+    });
 });
 function EnterText() {
     return __awaiter(this, void 0, void 0, function () {
-        var ex_1;
+        var length, ex_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    _a.trys.push([0, 7, 8, 9]);
+                    _a.trys.push([0, 8, 9, 10]);
                     return [4, protractor_1.element(protractor_1.by.name('q')).sendKeys('ConsolidatedChaos')];
                 case 1:
                     _a.sent();
@@ -74,30 +77,34 @@ function EnterText() {
                     return [4, protractor_1.element.all(protractor_1.by.tagName('div')).then(function (arr) { console.log(arr.length); })];
                 case 3:
                     _a.sent();
+                    return [4, protractor_1.element.all(protractor_1.by.tagName('div'))];
+                case 4:
+                    length = (_a.sent()).length;
+                    console.log('lenght is ' + length);
                     return [4, protractor_1.browser.driver.actions().mouseMove(protractor_1.element.all(protractor_1.by.tagName('span')).filter(function (elem, index) {
                             return elem.isDisplayed().then(function (text) {
                                 return text == true;
                             });
                         }).first()).perform()];
-                case 4:
+                case 5:
                     _a.sent();
                     return [4, protractor_1.browser.driver.actions().mouseMove(protractor_1.element.all(protractor_1.by.tagName('span')).filter(function (elem, index) {
                             return elem.isDisplayed().then(function (text) {
                                 return text == true;
                             });
                         }).first()).click(ptor_1.protractor.Button.RIGHT).perform()];
-                case 5:
+                case 6:
                     _a.sent();
                     console.log('waits for above all to complete');
                     return [4, sleep(2000)];
-                case 6:
-                    _a.sent();
-                    return [3, 9];
                 case 7:
+                    _a.sent();
+                    return [3, 10];
+                case 8:
                     ex_1 = _a.sent();
                     return [2, ('Failed' + ex_1)];
-                case 8: return [2, ('Function is completed')];
-                case 9: return [2];
+                case 9: return [2, ('Function is completed')];
+                case 10: return [2];
             }
         });
     });
@@ -111,16 +118,11 @@ function sleep(ms) {
 }
 function catpureResult() {
     return __awaiter(this, void 0, void 0, function () {
-        var _a, _b;
-        return __generator(this, function (_c) {
-            switch (_c.label) {
-                case 0:
-                    _b = (_a = console).log;
-                    return [4, EnterText()];
-                case 1:
-                    _b.apply(_a, [_c.sent()]);
-                    return [2];
-            }
+        var result;
+        return __generator(this, function (_a) {
+            result = EnterText().then(function (result) { return result; });
+            console.log(result);
+            return [2];
         });
     });
 }

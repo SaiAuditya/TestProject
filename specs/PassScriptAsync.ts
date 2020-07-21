@@ -5,8 +5,8 @@ import { protractor } from 'protractor/built/ptor';
 
 //To format the code it is Shift + Alt + F
 
-describe('sanity', () => {
-    it('expected to open google and pass', () => {
+describe('End to end testing', () => {
+    it('Test case 1 : to start a browser', () => {
         browser.ignoreSynchronization = true;
         //browser.manage().timeouts().pageLoadTimeout(180000);
         let url = environment[0].url
@@ -18,11 +18,10 @@ describe('sanity', () => {
                 browser.getTitle().then((title: string) => console.log(title));
             }
         );
-       catpureResult();    
-
+       catpureResult();
 });
 
-it('does the first step', () =>
+it('Test case 2 : does the second step', () =>
 {
     console.log('second test');
 }
@@ -71,5 +70,6 @@ async function sleep(ms:number) {
 
 async function catpureResult()
 {
-    console.log(await EnterText());
+    var result = EnterText().then((result)=>{return result});
+    console.log(result);
 }
