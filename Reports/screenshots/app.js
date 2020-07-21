@@ -498,6 +498,52 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "screenShotFile": "008c00e4-00fa-0027-00af-004200640082.png",
         "timestamp": 1595307158784,
         "duration": 2
+    },
+    {
+        "description": "Test case 1 : to start a browser|End to end testing",
+        "passed": false,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "6a7f3062a1f0f2f810fb1558fab442f7",
+        "instanceId": 21448,
+        "browser": {
+            "name": "chrome",
+            "version": "84.0.4147.89"
+        },
+        "message": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL."
+        ],
+        "trace": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.\n    at Timeout._onTimeout (C:\\Users\\venkata_srinadhuni\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4281:23)\n    at listOnTimeout (internal/timers.js:549:17)\n    at processTimers (internal/timers.js:492:7)"
+        ],
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.ZR5MgddWeJU.O/m=gapi_iframes,googleapis_client,plusone/rt=j/sv=1/d=1/ed=1/am=AAY/rs=AHpOoo-4Z3ZFsIV5SfJ3ya7-4n9QA-0-og/cb=gapi.loaded_0 - Failed to load resource: net::ERR_TIMED_OUT",
+                "timestamp": 1595308118604,
+                "type": ""
+            }
+        ],
+        "screenShotFile": "00f900f1-0062-0093-00f2-009500f700e0.png",
+        "timestamp": 1595308083275,
+        "duration": 53073
+    },
+    {
+        "description": "Test case 2 : does the second step|End to end testing",
+        "passed": true,
+        "pending": false,
+        "os": "windows",
+        "sessionId": "6a7f3062a1f0f2f810fb1558fab442f7",
+        "instanceId": 21448,
+        "browser": {
+            "name": "chrome",
+            "version": "84.0.4147.89"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "00b10058-00c9-00d9-0079-009200f800d7.png",
+        "timestamp": 1595308136926,
+        "duration": 2
     }
 ];
 

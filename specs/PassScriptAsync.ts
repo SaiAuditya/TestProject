@@ -70,6 +70,5 @@ async function sleep(ms:number) {
 
 async function catpureResult()
 {
-    var result = EnterText().then((result)=>{return result});
-    console.log(result);
+    await EnterText();
 }

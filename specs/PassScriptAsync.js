@@ -55,7 +55,7 @@ describe('End to end testing', function () {
         protractor_1.browser.get(url, 100000).then(function () { return console.log('browserOPened'); }).then(function () {
             protractor_1.browser.getTitle().then(function (title) { return console.log(title); });
         });
-        catpureResult();
+        catpureResult().then();
     });
     it('Test case 2 : does the second step', function () {
         console.log('second test');
