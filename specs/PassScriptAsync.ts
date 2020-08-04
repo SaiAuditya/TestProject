@@ -30,7 +30,6 @@ it('Test case 2 : does the second step', () =>
 });
 
 async function EnterText() :Promise<string> {
-
     try{
     await element(by.name('q')).sendKeys('ConsolidatedChaos');
     await element(by.name('q')).sendKeys(Key.ENTER);
