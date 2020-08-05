@@ -55,7 +55,7 @@ describe('End to end testing', function () {
         protractor_1.browser.get(url, 100000).then(function () { return console.log('browserOPened'); }).then(function () {
             protractor_1.browser.getTitle().then(function (title) { return console.log(title); });
         });
-        catpureResult().then();
+        catpureResult();
     });
     it('Test case 2 : does the second step', function () {
         console.log('second test');
@@ -118,11 +118,13 @@ function sleep(ms) {
 }
 function catpureResult() {
     return __awaiter(this, void 0, void 0, function () {
-        var result;
         return __generator(this, function (_a) {
-            result = EnterText().then(function (result) { return result; });
-            console.log(result);
-            return [2];
+            switch (_a.label) {
+                case 0: return [4, EnterText()];
+                case 1:
+                    _a.sent();
+                    return [2];
+            }
         });
     });
 }
