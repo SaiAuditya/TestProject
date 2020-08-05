@@ -22,13 +22,13 @@ async function login_enteropt() {
     console.log('here before ')
     try{
     await browser.driver.get('https://google.com');
-    await browser.driver.navigate().to('https://ectrweb-qa.azurewebsites.net/');
+    await browser.driver.navigate().to('###################');
     await browser.driver.findElement(by.id('i0116')).sendKeys('gokulnath.murali@technipfmc.com');
     await browser.driver.findElement(by.id('idSIButton9')).click();
     await browser.driver.findElement(by.id('password')).sendKeys('Houstonuk2020');
     await browser.driver.findElement(by.linkText('Sign On')).click();
     await browser.sleep(30000);
-    //await browser.driver.navigate().to("https://authenticator.pingone.com/pingid/ppm/auth");
+    //await browser.driver.navigate().to("#################");
     //await browser.sleep(10000);
     }catch(ex)
     {
